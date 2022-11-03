@@ -4,6 +4,10 @@ noremap k j
 noremap l k
 noremap ; l
 
+" Plugins:
+
+call plug#begin('~/.vim/plugged')
+
 " JS/TS плагины
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
@@ -16,3 +20,5 @@ Plug 'prettier/vim-prettier', {
   \ 'for': ['javascript', 'typescript', 'typescriptreact', 'javascriptreact', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
 Plug 'bmatcuk/stylelint-lsp'
+
+call plug#end()
