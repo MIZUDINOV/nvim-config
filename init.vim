@@ -78,3 +78,10 @@ require("auto-save").setup({
         debounce_delay = 135,
 })
 EOF
+
+" Белый цвет для сообщений об ошибках LSP
+set termguicolors
+hi DiagnosticError guifg=White
+hi DiagnosticWarn  guifg=White
+hi DiagnosticInfo  guifg=White
+hi DiagnosticHint  guifg=White
